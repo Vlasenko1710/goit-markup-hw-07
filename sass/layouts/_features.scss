@@ -1,0 +1,39 @@
+.feature .title {
+    margin-bottom: 10px;
+
+    color: var(--title-text-color);
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    text-transform: uppercase;
+    letter-spacing: 0.03em;
+}
+
+.feature .text {
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+}
+
+.feature-box {
+    display: flex;
+    gap: 30px;
+}
+
+.section.feature-section {
+    padding-bottom: 0;
+}
+
+.feature-item {
+    width: (calc(100% - 90px) / 4);
+}
+
+.feature-bloc {
+    display: flex;
+    height: 120px;
+    background-color: var(--secondary-color-fon);
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 30px;
+    border-radius: 4px;
+}
