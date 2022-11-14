@@ -14,6 +14,9 @@
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
+    & .button {
+    margin-top: 30px;
+}
 }
 
 .hero-title {
@@ -27,6 +30,3 @@
     text-transform: uppercase;
 }
 
-.hero .button {
-    margin-top: 30px;
-}

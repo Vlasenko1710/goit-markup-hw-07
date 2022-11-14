@@ -8,6 +8,11 @@
     justify-content: center;
     fill: var(--social-link-color);
     transition: border-color var(--animation-link), fill var(--animation-link);
+    &:hover,
+    &:focus {
+    border-color: var(--accent-color);
+    fill: var(--accent-color);
+}
 }
 
 .client.list {
@@ -16,8 +21,3 @@
     gap: 30px;
 }
 
-.client-clic:hover,
-.client-clic:focus {
-    border-color: var(--accent-color);
-    fill: var(--accent-color);
-}

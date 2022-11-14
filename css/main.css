@@ -100,12 +100,6 @@ img {
   letter-spacing: 0.03em;
 }
 
-.backdrop.is-hidden {
-  opacity: 0;
-  pointer-events: none;
-  visibility: hidden;
-}
-
 .backdrop {
   position: fixed;
   top: 0;
@@ -114,6 +108,11 @@ img {
   height: 100%;
   background: rgba(0, 0, 0, 0.2);
   transition: opacity var(--animation-link), visibility var(--animation-link);
+}
+.backdrop.is-hidden {
+  opacity: 0;
+  pointer-events: none;
+  visibility: hidden;
 }
 
 .modal {
@@ -126,7 +125,6 @@ img {
   transform: translate(-50%, -50%) scaleY(1);
   transition: transform var(--animation-link);
 }
-
 .backdrop.is-hidden .modal {
   transform: translate(-50%, -50%) scaleY(0);
 }
@@ -146,7 +144,6 @@ img {
   cursor: pointer;
   transform: fill var(--animation-link);
 }
-
 .close-modal-clic:hover {
   fill: var(--accent-color);
 }
@@ -166,9 +163,6 @@ img {
   margin-bottom: 12px;
 }
 
-/* .modal-form-gruop:not(:last-child){
-  margin-bottom: 10px;
-} */
 .modal-form-field {
   margin-bottom: 10px;
   display: flex;
@@ -194,13 +188,8 @@ img {
   outline: transparent;
   transition: border-color var(--animation-link);
 }
-
 .modal-form-input:focus {
   border-color: var(--accent-color);
-}
-
-.modal-form-input:focus + .modal-input-icon {
-  fill: var(--accent-color);
 }
 
 .input-wrap {
@@ -213,6 +202,9 @@ img {
   top: 50%;
   transform: translateY(-50%);
   transition: fill var(--animation-link);
+}
+.modal-form-input:focus + .modal-input-icon {
+  fill: var(--accent-color);
 }
 
 .modal-form-field > textarea {
@@ -277,13 +269,11 @@ img {
   fill: transparent;
   transition: background-color var(--animation-link), border-color var(--animation-link), fill var(--animation-link);
 }
-
 .input-check:checked + .check-label span {
   background-color: var(--accent-color);
   border-color: transparent;
   fill: var(--white-color);
 }
-
 .input-check:focus + .check-label span {
   border-color: var(--accent-color);
 }
@@ -292,7 +282,6 @@ img {
   color: var(--accent-color);
   margin-left: 4px;
 }
-
 .text-contract:focus {
   outline-color: var(--accent-color);
 }
@@ -330,12 +319,9 @@ img {
   text-decoration: none;
   transition: color var(--animation-link);
 }
-
-.site-nav .link:hover,
-.site-nav .link:focus {
+.site-nav .link:hover, .site-nav .link:focus {
   color: var(--accent-color);
 }
-
 .site-nav .link.current {
   color: var(--accent-color);
 }
@@ -343,7 +329,6 @@ img {
 .site-nav .link.line {
   position: relative;
 }
-
 .site-nav .link.line::after {
   content: "";
   position: absolute;
@@ -420,6 +405,9 @@ img {
   background-repeat: no-repeat;
   background-position: center;
 }
+.hero .button {
+  margin-top: 30px;
+}
 
 .hero-title {
   color: var(--white-color);
@@ -430,10 +418,6 @@ img {
   line-height: 1.36;
   letter-spacing: 0.06em;
   text-transform: uppercase;
-}
-
-.hero .button {
-  margin-top: 30px;
 }
 
 .feature .title {
@@ -553,9 +537,7 @@ img {
   fill: var(--social-link-color);
   transition: background-color var(--animation-link), fill var(--animation-link);
 }
-
-.social-clic:hover,
-.social-clic:focus {
+.social-clic:hover, .social-clic:focus {
   background-color: var(--accent-color);
   fill: var(--white-color);
 }
@@ -578,17 +560,15 @@ img {
   fill: var(--social-link-color);
   transition: border-color var(--animation-link), fill var(--animation-link);
 }
+.client-clic:hover, .client-clic:focus {
+  border-color: var(--accent-color);
+  fill: var(--accent-color);
+}
 
 .client.list {
   display: flex;
   margin-top: 50px;
   gap: 30px;
-}
-
-.client-clic:hover,
-.client-clic:focus {
-  border-color: var(--accent-color);
-  fill: var(--accent-color);
 }
 
 .footer {
@@ -652,9 +632,7 @@ img {
   fill: var(--white-color);
   transition: background-color var(--animation-link);
 }
-
-.footer-clic:hover,
-.footer-clic:focus {
+.footer-clic:hover, .footer-clic:focus {
   background-color: var(--accent-color);
 }
 
@@ -667,8 +645,6 @@ img {
 
 .form-footer {
   display: flex;
-  /* align-items:baseline;
-  justify-content: center; */
   margin-top: 20px;
   gap: 12px;
 }
@@ -723,9 +699,7 @@ img {
   letter-spacing: 0.03em;
   transition: color var(--animation-link), background-color var(--animation-link), box-shadow var(--animation-link);
 }
-
-.button.filter:hover,
-.button.filter:focus {
+.button.filter:hover, .button.filter:focus {
   color: var(--white-color);
   background-color: var(--accent-color);
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
@@ -795,8 +769,6 @@ img {
   letter-spacing: 0.03em;
   color: var(--white-color);
 }
-
-.portfolio-item .link:hover .portfolio-top-text,
-.portfolio-item .link:focus .portfolio-top-text {
+.portfolio-item .link:hover .portfolio-top-text, .portfolio-item .link:focus .portfolio-top-text {
   transform: translateY(0);
 }/*# sourceMappingURL=main.css.map */

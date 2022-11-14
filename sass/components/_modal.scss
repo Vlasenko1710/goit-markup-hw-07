@@ -8,12 +8,10 @@
     background-color: var(--white-color);
     transform: translate(-50%, -50%) scaleY(1);
     transition: transform var(--animation-link);
-}
-
-.backdrop.is-hidden .modal {
+    .backdrop.is-hidden & {
     transform: translate(-50%, -50%) scaleY(0);
 }
-
+}
 .close-modal-clic {
     position: absolute;
     top: 8px;
@@ -28,8 +26,8 @@
     border: 1px solid rgba(0, 0, 0, 0.1);
     cursor: pointer;
     transform: fill var(--animation-link);
-}
-
-.close-modal-clic:hover {
+    &:hover {
     fill: var(--accent-color);
 }
+}
+

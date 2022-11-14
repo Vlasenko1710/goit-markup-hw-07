@@ -58,12 +58,13 @@
     justify-content: center;
     fill: var(--white-color);
     transition: background-color var(--animation-link);
-}
-
-.footer-clic:hover,
-.footer-clic:focus {
+    &:hover,
+    &:focus {
     background-color: var(--accent-color);
 }
+}
+
+
 
 .footer-list.list {
     display: flex;
@@ -74,8 +75,6 @@
 
 .form-footer {
     display: flex;
-    /* align-items:baseline;
-  justify-content: center; */
     margin-top: 20px;
     gap: 12px;
 }

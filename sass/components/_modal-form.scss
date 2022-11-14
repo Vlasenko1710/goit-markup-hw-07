@@ -14,9 +14,6 @@
     margin-bottom: 12px;
 }
 
-/* .modal-form-gruop:not(:last-child){
-  margin-bottom: 10px;
-} */
 .modal-form-field {
     margin-bottom: 10px;
     display: flex;
@@ -42,17 +39,11 @@
     border-radius: 4px;
     outline: transparent;
     transition: border-color var(--animation-link);
-}
-
-.modal-form-input:focus {
+    &:focus {
     border-color: var(--accent-color);
 
 }
-
-.modal-form-input:focus+.modal-input-icon {
-    fill: var(--accent-color);
 }
-
 .input-wrap {
     position: relative;
 }
@@ -63,6 +54,9 @@
     top: 50%;
     transform: translateY(-50%);
     transition: fill var(--animation-link);
+    .modal-form-input:focus+& {
+            fill: var(--accent-color);
+        }
 }
 
 .modal-form-field>textarea {
@@ -110,24 +104,23 @@
     margin-right: 8px;
     fill: transparent;
     transition: background-color var(--animation-link), border-color var(--animation-link), fill var(--animation-link);
-}
-
-.input-check:checked+.check-label span {
-    background-color: var(--accent-color);
-    border-color: transparent;
-    fill: var(--white-color);
-}
-
-.input-check:focus+.check-label span {
+    .input-check:checked+& {
+            background-color: var(--accent-color);
+            border-color: transparent;
+            fill: var(--white-color);
+        }
+    .input-check:focus+& {
     border-color: var(--accent-color);
 
+}    
 }
+
 
 .text-contract {
     color: var(--accent-color);
     margin-left: 4px;
+   &:focus {
+    outline-color: var(--accent-color);
+} 
 }
 
-.text-contract:focus {
-    outline-color: var(--accent-color);
-}
