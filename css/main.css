@@ -74,7 +74,7 @@ img {
   margin: -1px;
 }
 
-.button {
+.btn {
   cursor: pointer;
   border-radius: 4px;
   padding: 10px 32px;
@@ -295,7 +295,7 @@ img {
   letter-spacing: 0.03em;
 }
 
-.logo-nav .logo {
+.navigation .logo {
   padding-top: 24px;
   padding-bottom: 25px;
 }
@@ -304,8 +304,13 @@ img {
   color: var(--accent-color);
 }
 
-.header-box {
+.header {
   border-bottom: 1px solid #eeeeee;
+}
+
+.header__container {
+  display: flex;
+  align-items: center;
 }
 
 .site-nav .link {
@@ -347,7 +352,7 @@ img {
   gap: 50px;
 }
 
-.logo-nav {
+.navigation {
   display: flex;
 }
 
@@ -379,11 +384,6 @@ img {
   fill: var(--accent-color);
 }
 
-.container-nav {
-  display: flex;
-  align-items: center;
-}
-
 .contacts {
   display: flex;
   align-items: center;
@@ -391,25 +391,29 @@ img {
   gap: 50px;
 }
 
-.hero {
+.banner {
   height: 600px;
   padding-top: 200px;
   padding-bottom: 200px;
   background-color: #2f303a;
   text-align: center;
   min-width: 1600px;
-  margin-left: auto;
-  margin-right: auto;
   background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero-fon.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
 }
-.hero .button {
+
+.hero__banner {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.banner__btn {
   margin-top: 30px;
 }
 
-.hero-title {
+.banner__title {
   color: var(--white-color);
   width: 696px;
   margin: 0 auto;
@@ -420,7 +424,7 @@ img {
   text-transform: uppercase;
 }
 
-.feature .title {
+.cards__title {
   margin-bottom: 10px;
   color: var(--title-text-color);
   font-weight: 700;
@@ -430,26 +434,26 @@ img {
   letter-spacing: 0.03em;
 }
 
-.feature .text {
+.cards__text {
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
 }
 
-.feature-box {
+.cards__box {
   display: flex;
   gap: 30px;
 }
 
-.section.feature-section {
+.cards {
   padding-bottom: 0;
 }
 
-.feature-item {
+.cards__item {
   width: calc(100% - 90px)/4;
 }
 
-.feature-bloc {
+.cards__bloc {
   display: flex;
   height: 120px;
   background-color: var(--secondary-color-fon);
@@ -459,17 +463,17 @@ img {
   border-radius: 4px;
 }
 
-.examples-box {
+.pictures-list {
   display: flex;
   margin-top: 50px;
   gap: 30px;
 }
 
-.examples-top-wrap {
+.pictures-list__wrap {
   position: relative;
 }
 
-.examples-top-text {
+.pictures-list__text {
   position: absolute;
   bottom: 0;
   background-color: rgba(47, 48, 58, 0.8);

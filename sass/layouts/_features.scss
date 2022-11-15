@@ -1,4 +1,4 @@
-.feature .title {
+.cards__title {
     margin-bottom: 10px;
 
     color: var(--title-text-color);
@@ -9,26 +9,26 @@
     letter-spacing: 0.03em;
 }
 
-.feature .text {
+.cards__text {
     font-size: 14px;
     line-height: 1.71;
     letter-spacing: 0.03em;
 }
 
-.feature-box {
+.cards__box {
     display: flex;
     gap: 30px;
 }
 
-.section.feature-section {
+.cards {
     padding-bottom: 0;
 }
 
-.feature-item {
+.cards__item {
     width: (calc(100% - 90px) / 4);
 }
 
-.feature-bloc {
+.cards__bloc {
     display: flex;
     height: 120px;
     background-color: var(--secondary-color-fon);

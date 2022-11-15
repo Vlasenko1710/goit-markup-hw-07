@@ -1,5 +1,9 @@
-.header-box {
+.header {
     border-bottom: 1px solid #eeeeee;
+}
+.header__container {
+    display: flex;
+    align-items: center;
 }
 .site-nav .link {
     padding-top: 32px;
@@ -33,10 +37,7 @@
     background-color: var(--accent-color);
     border-radius: 2px;
 }
-
 }
-
-
 .site-nav {
     display: flex;
     align-items: center;
@@ -44,7 +45,7 @@
     gap: 50px;
 }
 
-.logo-nav {
+.navigation {
     display: flex;
 }
 
@@ -77,10 +78,7 @@
     fill: var(--accent-color);
 }
 
-.container-nav {
-    display: flex;
-    align-items: center;
-}
+
 
 .contacts {
     display: flex;

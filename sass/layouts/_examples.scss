@@ -1,14 +1,14 @@
-.examples-box {
+.pictures-list {
     display: flex;
     margin-top: 50px;
     gap: 30px;
 }
 
-.examples-top-wrap {
+.pictures-list__wrap {
     position: relative;
 }
 
-.examples-top-text {
+.pictures-list__text {
     position: absolute;
     bottom: 0;
     background-color: rgba(47, 48, 58, 0.8);
