@@ -15,11 +15,12 @@
 }
 
 .modal-form-field {
-    margin-bottom: 10px;
     display: flex;
     flex-direction: column;
 }
-
+.modal-form-field:not(:last-child) div {
+     margin-bottom: 10px;
+}
 .modal-form-label {
     font-family: inherit;
     font-weight: 400;
